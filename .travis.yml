@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: ev5tvPNl+wecgX0jssYW4xMMsZ4QmG2NG1ATvPdzSaOaYaZF2FDZBXbUCj7tx+JHa21m17t08W7vfoPeGS/vtwn2R+SwmwPjASIF9mWvZ+5m6bnFYPUuDHQyUW0j4e4pd4VL4SZrdapr/Q5ATHIan1YWYl99JUKwE3VXvcyZ2sJpdqj6D6I9cvWN3TdhTelWzCVGuEBa+ClhTtg4FtNf8U5nH9w6Lb2ig4d5hB3F4Grf78uYxX7Na9TvjURNpINX9u4p+ow4ga0uiQSd53Y26lE5Dt1XPk9Jjf1vUucZ/0auFpGBttpslsshxpg7FL40R1f1gQqLWm8WIy4Z+AE9Jer/KQxvUDwt465K4n5Uuy9QVTYafuwl6q/OVUQ2zMXycb8joQz7UrtGu7R0y6u8SBlILj4FoX2zc40ZjQpIkW6LnD0ht7uVZ8demoMNeDT3hY9mGMPK92AsKWTqLEi/XQIzef/vO9YwsX3X2nuGYdho4UspoxI8UlysSOYLjIRcl85LOXpZ6qNCvpliYMUNk79ZJX9zzcd1kbXi5TvOvjQ2lTRqoc8Ru9pCIKCpekNYLxtR4uz+OLHnDjFnxTwNynP2pwQu+/HcLW9LE0PrU6afgzQCpIiNYFIo+Rw3fRk/MwnaHq6d7qlxUPaJnhsnJaWfzq0qjf0tQch+H97jZk8=
+  app: obscure-temple-20256
+  on:
+    repo: ellendunn/node-restaurants-app-ci
+    branch: feature/with-tests
